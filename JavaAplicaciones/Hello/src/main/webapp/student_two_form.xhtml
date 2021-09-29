@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+>
+<h:head>
+    <title>Student Form 2</title>
+</h:head>
+<h:body>
+    <h:form>
+        First name: <h:inputText value="#{studentTwo.firstName}" a:placeholder="FirstName"/>
+        <br/><br/>
+        Last name: <h:inputText value="#{studentTwo.lastName}" a:placeholder="LastName"/>
+        <br/><br/>
+        Country:
+        <h:selectOneMenu value="#{studentTwo.country}">
+            <f:selectItems value="#{studentTwo.countryOptions}"/>
+        </h:selectOneMenu>
+
+        <!--        <h:selectOneMenu value="#{studentTwo.country}">-->
+        <!--            <f:selectItem itemValue="Brazil" itemLabel="Brazil" />-->
+        <!--            <f:selectItem itemValue="France" itemLabel="France" />-->
+        <!--            <f:selectItem itemValue="Germany" itemLabel="Germany" />-->
+        <!--            <f:selectItem itemValue="India" itemLabel="India" />-->
+        <!--            <f:selectItem itemValue="Turkey" itemLabel="Turkey" />-->
+        <!--            <f:selectItem itemValue="United Kingdom" itemLabel="United Kingdom" />-->
+        <!--            <f:selectItem itemValue="United States" itemLabel="United States" />-->
+        <!--        </h:selectOneMenu>-->
+        <br/><br/>
+        <h:commandButton value="Submit" action="student_two_response"/>
+    </h:form>
+
+</h:body>
+</html>
