@@ -15,7 +15,8 @@
 
   <!-- Welcome page empresa -->
   <welcome-file-list>
-    <welcome-file>home.xhtml</welcome-file>
+<!--    <welcome-file>home.xhtml</welcome-file>-->
+    <welcome-file>student_form.xhtml</welcome-file>
   </welcome-file-list>
 
   <!-- JSF mapping -->
