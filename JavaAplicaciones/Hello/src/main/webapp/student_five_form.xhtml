@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+>
+<h:head>
+    <title>Student Form 5</title>
+</h:head>
+<h:body>
+    <h:form>
+        First name: <h:inputText value="#{studentFive.firstName}" a:placeholder="FirstName"/>
+        <br/><br/>
+        Last name: <h:inputText value="#{studentFive.lastName}" a:placeholder="LastName"/>
+        <br/><br/>
+        Favorite Programming Languages:
+        <h:selectOneRadio value="#{studentFive.favoriteLanguage}">
+            <f:selectItem itemValue="Java" itemLabel="Java"/>
+            <f:selectItem itemValue="C#" itemLabel="C#"/>
+            <f:selectItem itemValue="PHP" itemLabel="PHP"/>
+            <f:selectItem itemValue="Ruby" itemLabel="Ruby"/>
+        </h:selectOneRadio>
+
+        <br/><br/>
+        <br/><br/>
+        <h:commandButton value="Submit" action="student_five_response"/>
+    </h:form>
+
+</h:body>
+</html>
