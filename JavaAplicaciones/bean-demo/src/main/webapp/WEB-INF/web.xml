@@ -15,7 +15,7 @@
 
   <!-- Welcome page empresa -->
   <welcome-file-list>
-    <welcome-file>counter.xhtml</welcome-file>
+    <welcome-file>tour_form.xhtml</welcome-file>
   </welcome-file-list>
 
   <!-- JSF mapping -->
