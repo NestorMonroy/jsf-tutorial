@@ -3,31 +3,31 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-  <display-name>Archetype Created Web Application</display-name>
-  <display-name>JavaServerFaces</display-name>
+    <display-name>Archetype Created Web Application</display-name>
+    <display-name>JavaServerFaces</display-name>
 
-  <!-- Change to "Production" when you are ready to deploy -->
-  <context-param>
-    <param-name>javax.faces.PROJECT_STAGE</param-name>
-    <param-value>Development</param-value>
-  </context-param>
+    <!-- Change to "Production" when you are ready to deploy -->
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
 
 
-  <!-- Welcome page empresa -->
-  <welcome-file-list>
-    <welcome-file>tour_form.xhtml</welcome-file>
-  </welcome-file-list>
+    <!-- Welcome page empresa -->
+    <welcome-file-list>
+        <welcome-file>counter_three.xhtml</welcome-file>
+    </welcome-file-list>
 
-  <!-- JSF mapping -->
-  <servlet>
-    <servlet-name>Faces Servlet</servlet-name>
-    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
+    <!-- JSF mapping -->
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
 
-  <!-- Map these files with JSF -->
-  <servlet-mapping>
-    <servlet-name>Faces Servlet</servlet-name>
-    <url-pattern>*.xhtml</url-pattern>
-  </servlet-mapping>
+    <!-- Map these files with JSF -->
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
 </web-app>

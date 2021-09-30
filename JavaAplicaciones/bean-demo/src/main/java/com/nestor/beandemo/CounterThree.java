@@ -1,19 +1,18 @@
 package com.nestor.beandemo;
 
+
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.faces.bean.RequestScoped;
 
 @ManagedBean
-@SessionScoped //Solo la session
-public class Counter {
+@RequestScoped //Short-lived
+public class CounterThree {
     private int value = 0;
-
+    public CounterThree() {
+    }
     public String increment() {
         value++;
-        return "counter";
-    }
-
-    public Counter() {
+        return "counter_three";
     }
 
     public int getValue() {
