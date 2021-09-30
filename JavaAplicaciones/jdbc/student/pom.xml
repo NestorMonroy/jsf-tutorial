@@ -11,6 +11,7 @@
   <modules>
     <module>list-students</module>
     <module>add-student</module>
+    <module>update-student</module>
   </modules>
 
   <name>student</name>
